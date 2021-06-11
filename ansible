@@ -1,9 +1,13 @@
 ---
 - name: test
-  hosts: localhost
+  hosts: all
   become: yes
  
   
-  tesks:
+  tasks:
     - name: minwoo
-      shell: ls
+      yum:
+        name: httpd
+        state: present
+        
+   
