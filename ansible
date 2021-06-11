@@ -2,7 +2,7 @@
 - name: test
   hosts: localhost
   become: yes
-  gather_facts: no
+ 
   
   tesks:
     - name: minwoo
